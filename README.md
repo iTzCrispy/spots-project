@@ -20,4 +20,5 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 Good luck and have fun!
 
-# test
+**Summary**
+In this projects images were added that were given in the first stage, created multiple css under blocks. Each css has been imported. This project was a bit challenging even using figma but it has was a good experience.
