@@ -40,4 +40,4 @@ This webpage is deployed on GitHUb Pages
 
 Loom Pitch Video
 
--
+-https://drive.google.com/file/d/1gx_01DaVQErXz7J1nnEdacX9AeKL2Auk/view?usp=drive_link
