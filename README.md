@@ -20,5 +20,24 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 Good luck and have fun!
 
-**Summary**
-In this projects images were added that were given in the first stage, created multiple css under blocks. Each css has been imported. This project was a bit challenging even using figma but it has was a good experience.
+**Spots**
+Link is under Figma
+
+**Description**
+This project is to help and learn the process of making the websit be access to all devices from phone, tablet and computers. Able to make sure the images and fonts stay in the correct matters when changing the pixels to the lowest.
+
+**Tech Stack**
+
+-HTML
+-CSS
+-Responsive design
+
+**Deployment**
+
+This webpage is deployed on GitHUb Pages
+
+- https://itzcrispy.github.io/spots-project/
+
+Loom Pitch Video
+
+-

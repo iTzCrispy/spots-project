@@ -56,6 +56,12 @@
   font-weight: 500;
 }
 
+.profile__edit-btn:hover {
+  cursor: pointer;
+  color: #212121;
+  opacity: 100%;
+}
+
 .profile__add-btn {
   margin-left: auto;
   align-self: flex-end;
@@ -67,6 +73,12 @@
   border-radius: 8px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
+}
+
+.profile__add-btn:hover {
+  cursor: pointer;
+  color: #212121;
+  opacity: 80%;
 }
 
 @media screen and (max-width: 627px) {

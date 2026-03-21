@@ -20,6 +20,12 @@
   opacity: 40%;
 }
 
+.card__like-btn:hover {
+  cursor: pointer;
+  color: #212121;
+  opacity: 100%;
+}
+
 .card__title {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
