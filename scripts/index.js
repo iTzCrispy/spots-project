@@ -10,28 +10,13 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 );
 
 editProfileBtn.addEventListener("click", function () {
-  editProfileModal.classList.add(".modal_is-opened ");
+  editProfileNameInput.value = profileNameElement.textContent;
+  editProfileDescriptionInput.value = profileDescriptionElement.textContent;
+  editProfileModal.classList.add("modal__is-opened");
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
-  editProfileNameInput.value = profileNameElement.textContent;
-  editProfileDescriptionInput.value = profileDescriptionElement.textContent;
   editProfileModal.classList.remove("modal__is-opened");
-});
-
-const newPostBtn = document.querySelector(".profile__add-btn");
-const newPostModal = document.querySelector("#new-post-modal");
-const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
-const newPostForm = newPostModal.querySelector(".modal__form");
-const newImageInput = newPostModal.querySelector("#card-image-input");
-const newCaptionInput = newPostModal.querySelector("#card-caption-input");
-
-newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal__is-opened");
-});
-
-newPostCloseBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal__is-opened");
 });
 
 const profileNameElement = document.querySelector(".profile__name");
@@ -48,8 +33,25 @@ function handleEditProfileSubmit(evt) {
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
-const newImageElement = document.querySelector("#card-image-input");
-const newCaptionElement = document.querySelector("#card-caption-input");
+const newPostBtn = document.querySelector(".profile__add-btn");
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+const newPostForm = newPostModal.querySelector(".modal__form");
+const newImageInput = newPostModal.querySelector("#card-image-input");
+const newCaptionInput = newPostModal.querySelector("#card-caption-input");
+
+newPostBtn.addEventListener("click", function () {
+  newImageInput.value = imageInputelement.textContent;
+  newCaptionInput.value = captionInputelement.textContent;
+  newPostModal.classList.add("modal__is-opened");
+});
+
+newPostCloseBtn.addEventListener("click", function () {
+  newPostModal.classList.remove("modal__is-opened");
+});
+
+const imageInputelement = document.querySelector(".card__image");
+const captionInputelement = document.querySelector(".card__title");
 
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
