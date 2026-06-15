@@ -41,8 +41,6 @@ const newImageInput = newPostModal.querySelector("#card-image-input");
 const newCaptionInput = newPostModal.querySelector("#card-caption-input");
 
 newPostBtn.addEventListener("click", function () {
-  newImageInput.value = imageInputelement.textContent;
-  newCaptionInput.value = captionInputelement.textContent;
   newPostModal.classList.add("modal__is-opened");
 });
 
@@ -58,8 +56,10 @@ function handleNewPostSubmit(evt) {
   const imageUrl = newImageInput.value;
   const caption = newCaptionInput.value;
 
-  console.log(newImageInput);
-  console.log(newCaptionInput);
+  console.log(imageUrl);
+  console.log(caption);
+
+  newPostForm.reset();
 
   newPostModal.classList.remove("modal__is-opened");
 }
