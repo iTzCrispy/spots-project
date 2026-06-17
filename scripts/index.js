@@ -48,9 +48,6 @@ newPostCloseBtn.addEventListener("click", function () {
   newPostModal.classList.remove("modal__is-opened");
 });
 
-const imageInputelement = document.querySelector(".card__image");
-const captionInputelement = document.querySelector(".card__title");
-
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
   const imageUrl = newImageInput.value;
